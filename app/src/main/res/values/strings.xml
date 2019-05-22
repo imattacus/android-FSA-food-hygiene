@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">FSA</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="search_name">Advanced Search</string>
+    <string name="home_name">Nearby</string>
+    <string name="favourites_name">Favourites</string>
+    <string name="settings_name">Settings</string>
+    <string name="search_hint">Search</string>
+    <string name="distance_label">Distance</string>
+    <string name="business_type_label">Business Type</string>
+    <string name="rating_label">Rating</string>
+    <string name="rating_date_label">Date Rated</string>
+    <string name="rating_breakdown_label">Breakdown of rating</string>
+    <string name="rating_hygiene">Hygiene</string>
+    <string name="rating_structural">Structural</string>
+    <string name="rating_confidence">Confidence in Management</string>
+    <string name="lastcheck_label">Last Inspection</string>
+    <string name="address_label">Business Address</string>
+    <string name="business_name_label">Search By Business Name</string>
+    <string name="value_optional">(Optional)</string>
+    <string name="location_label">Search In Location</string>
+    <string name="use_my_location_label">Use my current location</string>
+    <string name="using_my_location">Your current location will be used</string>
+    <string name="search_radius_label">Search Radius in Miles</string>
+    <string name="search_filters_label">Search Filters</string>
+    <string name="search_sortdiv_label">Sort your search</string>
+    <string name="search_details_label">Search Details</string>
+    <string name="show_exempt">Show Exempt Establishments</string>
+    <string name="local_auth_label">Local Authority</string>
+    <string name="apply_filters">Apply Filters</string>
+    <string name="reset_filters">Reset Filters</string>
+    <string name="region_label">Region</string>
+    <string-array name="rating_values">
+        <item name="rating_0">0</item>
+        <item name="rating_1">1</item>
+        <item name="rating_2">2</item>
+        <item name="rating_3">3</item>
+        <item name="rating_4">4</item>
+        <item name="rating_5">5</item>
+    </string-array>
+    <string-array name="rating_methods">
+        <item>Only</item>
+        <item>and Above</item>
+        <item>and Below</item>
+    </string-array>
+    <string-array name="rating_methods_values">
+        <item>Equal</item>
+        <item>GreaterThanOrEqual</item>
+        <item>LessThanOrEqual</item>
+    </string-array>
+    <string-array name="placeholder_any">
+        <item name="any">All</item>
+    </string-array>
+    <string name="sort_label">Sort By</string>
+    <string-array name="api_sort_methods">
+        <item>Relevance</item>
+        <item>Rating (Ascending)</item>
+        <item>Rating (Descending)</item>
+        <item>Alphabetical (Ascending)</item>
+        <item>Alphabetical (Descending)</item>
+        <item>Distance</item>
+    </string-array>
+    <string-array name="api_sort_methods_values">
+        <item>Relevance</item>
+        <item>desc_rating</item>
+        <item>rating</item>
+        <item>desc_alpha</item>
+        <item>alpha</item>
+        <item>distance</item>
+    </string-array>
+    <string-array name="regions">
+        <item>East Counties</item>
+        <item>East Midlands</item>
+        <item>London</item>
+        <item>North East</item>
+        <item>North West</item>
+        <item>South East</item>
+        <item>South West</item>
+        <item>West Midlands</item>
+        <item>Yorkshire and Humberside</item>
+        <item>Northern Ireland</item>
+        <item>Scotland</item>
+        <item>Wales</item>
+    </string-array>
+    <string name="all">All</string>
+    <string name="change_passcode">Change your passcode</string>
+    <string name="old_passcode">Enter your old passcode</string>
+    <string name="new_passcode">Enter a new passcode</string>
+    <string name="passcode_set">Your passcode has been set, use it next time to access the app</string>
+    <string name="passcode_label">Passcode Settings</string>
+    <string name="set_passcode">Set your passcode</string>
+    <string name="disable_passcode">Disable your passcode</string>
+    <string name="search_show_advanced">Show advanced search options</string>
+    <string name="address">Business Address</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_passcode">PasscodeActivity</string>
+</resources>

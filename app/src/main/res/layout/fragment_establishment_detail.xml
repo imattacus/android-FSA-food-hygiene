@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/detail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Business Name"
+            app:titleTextColor="#ffffff" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/rating_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                app:contentPadding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/detail_rating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Awaiting Inspection"
+                        android:textAlignment="center"
+                        android:textSize="45sp" />
+
+                    <TextView
+                        android:id="@+id/breakdown_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/detail_rating"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/rating_breakdown_label"
+                        android:textAlignment="textStart"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/breakdown_label"
+                        android:layout_alignLeft="@id/breakdown_label">
+
+                        <TextView
+                            android:id="@+id/confidence_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="0dp"
+                            android:text="@string/rating_confidence"
+                            android:textAlignment="textEnd"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:id="@+id/confidence_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_toEndOf="@id/confidence_label"
+                            android:text="NYI" />
+
+                        <TextView
+                            android:id="@+id/hygiene_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/confidence_label"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="0dp"
+                            android:text="@string/rating_hygiene"
+                            android:textAlignment="textEnd"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:id="@+id/hygiene_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/hygiene_label"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_toEndOf="@id/hygiene_label"
+                            android:text="NYI" />
+
+                        <TextView
+                            android:id="@+id/structure_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/hygiene_label"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="0dp"
+                            android:text="@string/rating_structural"
+                            android:textAlignment="textEnd"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:id="@+id/structure_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/structure_label"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_toEndOf="@id/structure_label"
+                            android:text="NYI" />
+
+                    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rating_card"
+                android:layout_marginTop="8dp"
+                app:contentPadding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/lastcheck_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lastcheck_label"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/lastcheck_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/lastcheck_label"
+                        android:layout_marginTop="0dp"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        tools:text="@tools:sample/date/mmddyy" />
+
+                    <TextView
+                        android:id="@+id/filter_businessname_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/business_type_label"
+                        android:textStyle="bold"
+                        android:layout_below="@id/lastcheck_value"/>
+
+                    <TextView
+                        android:id="@+id/businesstype_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/filter_businessname_label"
+                        android:layout_marginTop="0dp"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        tools:text="@tools:sample/date/mmddyy" />
+
+                    <TextView
+                        android:id="@+id/businessaddress_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/businesstype_value"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/address_label"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/address_line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/businessaddress_label"
+                        android:layout_marginTop="0dp"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        tools:text="@tools:sample/lorem" />
+
+                    <TextView
+                        android:id="@+id/address_line2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/address_line1"
+                        android:layout_marginTop="0dp"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        tools:text="@tools:sample/lorem" />
+
+                    <TextView
+                        android:id="@+id/address_line3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/address_line2"
+                        android:layout_marginTop="0dp"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        tools:text="@tools:sample/lorem" />
+
+                    <TextView
+                        android:id="@+id/address_line4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/address_line3"
+                        android:layout_marginTop="0dp"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        tools:text="@tools:sample/lorem" />
+
+                    <TextView
+                        android:id="@+id/postcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/address_line4"
+                        android:layout_marginTop="0dp"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        tools:text="@tools:sample/lorem" />
+
+                    <TextView
+                        android:id="@+id/localauthority_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/postcode"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/local_auth_label"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/local_auth_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/localauthority_label"
+                        android:layout_marginTop="0dp"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        tools:text="@tools:sample/lorem" />
+
+                    <TextView
+                        android:id="@+id/region_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/local_auth_value"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/region_label"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/region_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/region_label"
+                        android:layout_marginTop="0dp"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        tools:text="@tools:sample/cities" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

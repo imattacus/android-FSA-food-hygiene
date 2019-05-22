@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorSearchFrag">#FFEB3B</color>
+    <color name="colorFavsFrag">#DB4646</color>
+    <color name="colorSettingsFrag">#64645B</color>
+    <color name="colorBestRating">#4CAF50</color>
+    <color name="colorGoodRating">#FFEB3B</color>
+    <color name="colorLowRating">#F44336</color>
+    <color name="colorWorstRating">#000000</color>
+    <color name="colorNoRating">#D3D3D3</color>
+</resources>
